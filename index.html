@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie: Podłączamy karuzelę Flickity</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/normalize.css" media="screen">
+    <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Ktoś miał tu jeszcze: <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen"> -->
+</head>
+<body>
+
+        <a href="#carousel-cell1">H&M link</a>,
+        <a href="#carousel-cell2">Stradivarius link</a>,
+        <a href="#carousel-cell3">Promod link</a>,
+        <a href="#carousel-cell4">Vistula link</a>,
+        <a href="#carousel-cell5">Zara link</a>
+
+            <div class="carousel">
+                    <div class="carousel-cell" id="carousel-cell1" style="background-image: url(images/hm.png)">
+                        <div class="container">H&M</div>
+                    </div>
+                    <div class="carousel-cell" id="carousel-cell2" style="background-image: url(images/stradivarius.png)">
+                        <div class="container">Stradivarius</div>
+                    </div>
+                    <div class="carousel-cell" id="carousel-cell3" style="background-image: url(images/promod.png)">
+                        <div class="container">Promod</div>
+                    </div>
+                    <div class="carousel-cell" id="carousel-cell4" style="background-image: url(images/vistula.jpg)">
+                        <div class="container">Vistula</div>
+                    </div>
+                    <div class="carousel-cell" id="carousel-cell5" style="background-image: url(images/zara.jpg)">
+                        <div class="container">Zara</div>
+                  </div>	
+            </div>
+
+    <div class="progress-bar"></div>
+    <div class="button">
+        <a href="#carousel-cell1"><button class="buttonredo"><i class="fas fa-redo-alt redo"></i></button></a>
+    </div>
+</div>
+</div>
+
+<script src="vendor/flickity.pkgd.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/hash.js"></script>
+
+</body>
+</html>
+
