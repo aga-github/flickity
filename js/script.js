@@ -1,3 +1,30 @@
+// ===================== 10.2 : ========================================
+
+'use strict';
+
+(function () {
+
+    var templateItem = document.getElementById('template-item').innerHTML;
+
+    Mustache.parse(templateItem);
+
+    var listItems = '';
+
+    for (var i = 0; i < slideList.length; i++) {
+        listItems +=
+            Mustache.render(templateItem, slideList[i]);
+    }
+
+    var fullSlidesList = Mustache.render(templateItem, {
+        slides: listItems});
+
+    var results = document.getElementById('carousel');
+    results.insertAdjacentHTML('beforeend', fullSlidesList);
+
+})();
+
+// =====================  (10.1) : ========================================
+
 var elem = document.querySelector(".carousel");
 var flkty = new Flickity(elem, {
     hash: true,
