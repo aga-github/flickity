@@ -10,74 +10,49 @@
     <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-        <!-- 
-
-        <a href="#carousel-cell1">Orsay link</a>,
-        <a href="#carousel-cell2">Promod link</a>,
-        <a href="#carousel-cell3">Reserved link</a>,
-        <a href="#carousel-cell4">Stradivarius link</a>,
-        <a href="#carousel-cell5">Vistula link</a>
-        -->
+<body
 
             <div class="carousel" id="carousel" data-flickity>
             </div>    
-                <!-- 
-                    <div class="carousel-cell" id="carousel-cell1" style="background-image: url(images/orsay1.png)">
-                        <div class="container">Sklep nr 1</div>
-                    </div>
-                    <div class="carousel-cell" id="carousel-cell2" style="background-image: url(images/promod_.png)">
-                        <div class="container">Sklep nr 2</div>
-                    </div>
-                    <div class="carousel-cell" id="carousel-cell3" style="background-image: url(images/reserved.png)">
-                        <div class="container">Sklep nr 3</div>
-                    </div>
-                    <div class="carousel-cell" id="carousel-cell4" style="background-image: url(images/stradivarius.png)">
-                        <div class="container">Sklep nr 4</div>
-                    </div>
-                    <div class="carousel-cell" id="carousel-cell5" style="background-image: url(images/vistula.jpg)">
-                        <div class="container">Sklep nr 5</div>
-                  </div>
-                  -->	
-            
             
     <div class="progress-bar"></div>
     <div class="button">
     </div>
 
-<!-- 10.2 -- start -->
+<!-- 10.2 -- dodanie wąsa: -->
 
 <script id="template-item" type="x-tmpl-mustache">
-    {{{ slides }}} {{{ title }}} {{{ description }}}
+    <div class="carousel-cell" id="carousel-cell{{id}}" style="background-image: url({{image}})">
+        <div class="container">{{title}}</div>
     </div>
 </script>
 
 <script>
     var slideList = [
         {
-            image: 'Foto 1',
-            title: '<div class="container"><header>Sklep z wąsem nr 1</header></div>',
-            description: '<div class="carousel-cell" id="carousel-cell1" style="background-image: url(images/orsay1.png)">'
+            id: 1,
+            image: 'images/orsay1.png',
+            title: 'Sklep z wąsem nr 1',
         },
         {
-            image: 'Foto 2',
-            title: '<div class="container"><header>Sklep z wąsem nr 2</header></div>',
-            description: '<div class="carousel-cell" id="carousel-cell2" style="background-image: url(images/promod_.png)">'
+            id: 2,
+            image: 'images/promod_.png',
+            title: 'Sklep z wąsem nr 2',
         },
         {
-            image: 'Foto 3',
-            title: '<div class="container"><header>Sklep z wąsem nr 3</header></div>',
-            description: '<div class="carousel-cell" id="carousel-cell3" style="background-image: url(images/reserved.png)">'
+            id: 3,
+            image: 'images/reserved.png',
+            title: 'Sklep z wąsem nr 3',
         },
         {
-            image: 'Foto 4',
-            title: '<div class="container"><header>Sklep z wąsem nr 4</header></div>',
-            description: '<div class="carousel-cell" id="carousel-cell4" style="background-image: url(images/stradivarius.png)">'
+            id: 4,
+            image: 'images/stradivarius.png',
+            title: 'Sklep z wąsem nr 4',
         },
         {
-            image: 'Foto 5',
-            title: '<div class="container"><header>Sklep z wąsem nr 5</header></div>',
-            description: '<div class="carousel-cell" id="carousel-cell5" style="background-image: url(images/vistula.jpg)">'
+            id: 5,
+            image: 'images/vistula.jpg',
+            title: 'Sklep z wąsem nr 5',
         }
     ];
 </script>
@@ -91,4 +66,3 @@
 
 </body>
 </html>
-

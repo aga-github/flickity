@@ -1,3 +1,4 @@
+
 // ===================== 10.2 : ========================================
 
 'use strict';
@@ -11,15 +12,13 @@
     var listItems = '';
 
     for (var i = 0; i < slideList.length; i++) {
-        listItems +=
-            Mustache.render(templateItem, slideList[i]);
+        listItems += Mustache.render(templateItem, slideList[i]);
     }
 
-    var fullSlidesList = Mustache.render(templateItem, {
-        slides: listItems});
-
     var results = document.getElementById('carousel');
-    results.insertAdjacentHTML('beforeend', fullSlidesList);
+
+
+    results.insertAdjacentHTML('beforeend', listItems);
 
 })();
 
