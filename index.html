@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadania 10.1 & 10.2</title>
+    <title>Zadania 10.1 & 10.2 & 10.3</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="vendor/normalize.css" media="screen">
     <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body
+<body>
 
-            <div class="carousel" id="carousel" data-flickity>
-            </div>    
+<!-- 10.1 -- sektor karuzeli po zmianach z zad. 10.2: -->
+
+    <div class="carousel" id="carousel" data-flickity></div>    
             
     <div class="progress-bar"></div>
-    <div class="button">
-    </div>
+    <div class="button"></div>
 
 <!-- 10.2 -- dodanie wąsa: -->
 
@@ -32,37 +32,53 @@
         {
             id: 1,
             image: 'images/orsay1.png',
-            title: 'Sklep z wąsem nr 1',
+            title: 'Welcome to Magnolia',
+            coords: {lat: 51.119273, lng: 16.988921} 
         },
         {
             id: 2,
             image: 'images/promod_.png',
-            title: 'Sklep z wąsem nr 2',
+            title: 'Welcome to Wroclavia',
+            coords: {lat: 51.096458, lng: 17.034831}
         },
         {
             id: 3,
             image: 'images/reserved.png',
-            title: 'Sklep z wąsem nr 3',
+            title: 'Welcome to Renoma',
+            coords: {lat: 51.103640, lng: 17.031781}
         },
         {
             id: 4,
             image: 'images/stradivarius.png',
-            title: 'Sklep z wąsem nr 4',
+            title: 'Welcome to Galeria Dominikańska',
+            coords: {lat: 51.108479, lng: 17.040336}
         },
         {
             id: 5,
             image: 'images/vistula.jpg',
-            title: 'Sklep z wąsem nr 5',
+            title: 'Welcome to Pasaż Grunwaldzki',
+            coords: {lat: 51.112733, lng: 17.058971}
         }
     ];
 </script>
 
 <!-- 10.2 -- finish -->
 
+<!-- 10.3 -- dodanie mapy -->
+
+<div class="container">
+    <h4>My first G. Map with Markers</h4>
+    <div id="map"></div>
+</div>
+
+<!-- 10.3 -- finish -->
+
 <script src="vendor/flickity.pkgd.min.js"></script>
 <script src="js/hash.js"></script>
 <script src="js/mustache.js"></script>
 <script src="js/script.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu8FImdhSKk86VvQXyCIegYXThUf8X2dU&callback=initMap"> </script>
 
 </body>
 </html>

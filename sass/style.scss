@@ -37,11 +37,18 @@
 }
 
 .container {
-    color: green;
     font-size: 50px;
     text-align: center;
     padding: 15px 0px 15px 0px;
     max-width: 1000px;
     margin: 0 auto;
+    border: green 3px dotted;
     
+}
+
+#map {
+	width: 100%;
+    height: calc(50vh - 10px);
+    background-color: grey;
+    border: pink 5px dotted;
 }
